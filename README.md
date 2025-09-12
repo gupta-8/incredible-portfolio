@@ -1,4 +1,4 @@
-# Modern PHP Portfolio âœ¨
+# Modern PHP Portfolio
 
 A clean, modern, **no-framework** PHP portfolio template.  
 Built for developers who want a fast, maintainable personal site with a great UX, **light/dark theme**, and a secure contact form â€” without pulling in heavy dependencies.
