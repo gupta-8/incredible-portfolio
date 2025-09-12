@@ -1,0 +1,6 @@
+# Optional: route /about to index.php?page=about if your host supports mod_rewrite
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^(home|projects|about|contact)/?$ index.php?page=$1 [L,QSA]
+</IfModule>
