@@ -3,19 +3,10 @@
 
 A clean, modern **vanilla PHP** portfolio with a tiny router, shared layout, responsive UI, and a secure contact form (CSRF + validation). Zero external PHP dependencies - deploy anywhere PHP runs.
 
-<p align="left">
-  <img alt="PHP >= 8.0" src="https://img.shields.io/badge/PHP-%3E%3D%208.0-777BB4.svg?logo=php&logoColor=white">
-  <img alt="No Framework" src="https://img.shields.io/badge/Framework-None-0F172A">
-  <img alt="License MIT" src="https://img.shields.io/badge/License-MIT-10B981">
-</p>
+![PHP >= 8.0](https://img.shields.io/badge/PHP-%3E%3D%208.0-777BB4.svg?logo=php&logoColor=white)
+![Framework: None](https://img.shields.io/badge/Framework-None-0F172A)
+![License: MIT](https://img.shields.io/badge/License-MIT-10B981)
 
----
-
-## Preview
-> Replace with real screenshots of your site.
-<p align="center">
-  <img src="public/assets/img/placeholder.svg" width="720" alt="Homepage preview">
-</p>
 
 ---
 
