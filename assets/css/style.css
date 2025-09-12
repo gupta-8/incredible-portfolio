@@ -1,0 +1,60 @@
+/* Modern, responsive portfolio theme */
+:root{
+  --bg:#0b1220; --bg-2:#0e1528; --panel:#131c31; --border:#1f2a44; --text:#e6edf7; --muted:#9fb0c6;
+  --brand:#7dd3fc; --brand-2:#a78bfa; --accent:#22d3ee; --success:#10b981; --danger:#ef4444;
+  --radius:18px; --gap:1rem; --maxw:1100px;
+  font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(1200px 600px at 20% -10%,rgba(125,211,252,.15),transparent),linear-gradient(180deg,var(--bg),var(--bg-2));color:var(--text)}
+.container{width:min(100% - 2rem, var(--maxw));margin-inline:auto}
+.site-header{position:sticky;top:0;background:rgba(11,18,32,.6);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);z-index:10}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:.9rem 0}
+.brand{display:flex;gap:.7rem;align-items:center;color:var(--text);text-decoration:none}
+.logo{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#0b1220;font-weight:900}
+.brand-text{display:flex;flex-direction:column;line-height:1}
+.brand-text span{color:var(--muted);font-size:.85rem}
+.site-nav{display:flex;gap:.6rem;align-items:center}
+.site-nav a{padding:.5rem .8rem;border-radius:12px;color:var(--muted);text-decoration:none;border:1px solid transparent;transition:.2s}
+.site-nav a:hover{border-color:var(--border);color:var(--text)}
+.site-nav a.active{color:#0b1220;background:linear-gradient(135deg,var(--brand),var(--brand-2))}
+.nav-toggle{display:none;background:none;border:none;color:var(--text);font-size:1.25rem}
+.btn{display:inline-block;border:1px solid var(--border);background:#0f172a;color:var(--text);padding:.7rem 1rem;border-radius:12px;text-decoration:none;font-weight:600}
+.btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));border-color:transparent;color:#0b1220}
+.btn.small{padding:.45rem .7rem;font-size:.9rem}
+.btn.ghost{background:transparent}
+@media (max-width: 780px){
+  .site-nav{display:none;position:absolute;right:1rem;top:60px;background:#0e1528;border:1px solid var(--border);border-radius:14px;padding:.5rem;flex-direction:column}
+  .site-nav.open{display:flex}
+  .nav-toggle{display:block}
+}
+.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:2rem;padding:2.2rem 0 1.5rem}
+.hero .lead{color:var(--muted)}
+.hero-card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:1rem}
+.cta{display:flex;gap:.8rem;margin-top:1rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.card img{width:100%;height:180px;object-fit:cover;background:#0f172a}
+.card-body{padding:1rem}
+.tags{display:flex;gap:.4rem;flex-wrap:wrap;margin:.6rem 0}
+.tag{font-size:.8rem;color:#cbd5e1;background:#0f172a;border:1px solid var(--border);border-radius:999px;padding:.2rem .6rem}
+.prose .lead{color:var(--muted)}
+.prose a{color:var(--accent)}
+.site-footer{margin-top:2rem;border-top:1px solid var(--border)}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 0;color:var(--muted)}
+.alert{border-radius:12px;padding:.7rem 1rem;margin:.8rem 0}
+.alert.success{border:1px solid rgba(16,185,129,.5);background:rgba(16,185,129,.12)}
+.alert.error{border:1px solid rgba(239,68,68,.5);background:rgba(239,68,68,.12)}
+.form{display:grid;gap:.8rem;padding:1rem}
+label{display:grid;gap:.4rem}
+input,textarea{background:#0f172a;border:1px solid var(--border);border-radius:10px;padding:.7rem;color:var(--text)}
+input:focus,textarea:focus{outline:2px solid var(--brand-2)}
+h1,h2,h3{letter-spacing:.2px}
+.lead{color:var(--muted)}
+/* Light theme */
+:root.light{--bg:#f6f7fb; --bg-2:#ffffff; --panel:#ffffff; --border:#e5e7eb; --text:#0f172a; --muted:#5b6b82}
+:root.light body{background:linear-gradient(180deg,var(--bg),var(--bg-2))}
+:root.light .site-header{background:rgba(255,255,255,.7)}
+:root.light .btn{background:#f3f4f6}
+:root.light .card img{background:#e5e7eb}
+:root.light .site-nav a.active{color:#0f172a}
