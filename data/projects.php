@@ -1,7 +1,7 @@
 <?php
 $projects = [
   [
-    'title' => 'WP Speed Kit',
+    'title' => 'WP Speed Kit v8.2',
     'description' => 'A WordPress performance toolkit that improves Core Web Vitals with smart caching and image handling.',
     'tech' => ['PHP', 'WordPress', 'MySQL'],
     'image' => 'assets/img/placeholder.svg',
