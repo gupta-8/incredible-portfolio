@@ -1,1 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Random Joke Generator</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Random Joke Generator</h1>
 
+    <section class="controls">
+      <label for="category">Category</label>
+      <select id="category" aria-label="Joke category">
+        <option value="Any">Any</option>
+        <option value="Programming" selected>Programming</option>
+        <option value="Misc">Misc</option>
+        <option value="Pun">Pun</option>
+        <option value="Spooky">Spooky</option>
+        <option value="Christmas">Christmas</option>
+      </select>
+
+      <button id="getJokeBtn" type="button" aria-live="polite">
+        Get a Joke
+      </button>
+    </section>
+
+    <article id="card" class="card" aria-live="polite" aria-atomic="true">
+      <p id="setup" class="setup" hidden></p>
+      <p id="delivery" class="delivery" hidden></p>
+      <p id="single" class="single" hidden></p>
+      <p id="status" class="status">Press the button to get a joke.</p>
+    </article>
+
+    <footer class="foot">
+      <small>
+        Jokes from <a href="https://v2.jokeapi.dev/joke/Any" target="_blank" rel="noreferrer">JokeAPI</a>.
+      </small>
+    </footer>
+  </main>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
