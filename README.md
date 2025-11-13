@@ -23,32 +23,31 @@ A clean, modern **vanilla PHP** portfolio with a tiny router, shared layout, res
 
 ## Folder Structure
 ```
-incredible-portfolio-php/
-|-- public/                 # Document root
-|    |-- index.php            # Router (whitelists pages)
-|    `-- assets/
-|       |-- css/style.css
-|       |-- js/main.js
-|       `-- img/placeholder.svg
-|-- app/
-|    |-- config.php           # Site name, tagline, owner, contact_email
-|    |-- lib/functions.php    # Helpers: config(), e(), CSRF, mail, save_message
-|    |-- partials/
-|    |    |-- header.php
-|    |    `-- footer.php
-|    |-- pages/
-|    |    |-- home.php
-|    |    |-- projects.php
-|    |    |-- about.php
-|    |    `-- contact.php
-|    `-- data/projects.php    # Your projects array
-|-- storage/                # Contact form CSV (auto-created)
-|    `-- messages.csv
-|-- LICENSE                 # MIT
-|-- .gitignore
+incredible-portfolio/
+|-- index.php           # Router (whitelists pages)
+|-- config.php          # Site name, tagline, owner, contact_email
+|-- functions.php       # Helpers: config(), e(), CSRF, mail, save_message
+|-- header.php          # Shared header/layout (top)
+|-- footer.php          # Shared footer/layout (bottom)
+|-- assets/             # Frontend assets
+|   |-- css/
+|   |   `-- style.css
+|   |-- js/
+|   |   `-- main.js
+|   `-- img/
+|       `-- ... your images ...
+|-- pages/              # Individual pages rendered by index.php
+|   |-- home.php
+|   |-- projects.php
+|   |-- about.php
+|   `-- contact.php
+|-- data/
+|   `-- projects.php    # Your projects array
+|-- storage/            # Contact form CSV (auto-created)
+|   `-- messages.csv
+|-- LICENSE
 `-- README.md
 ```
-
 ---
 
 ## Quick Start
@@ -56,12 +55,13 @@ incredible-portfolio-php/
 ### 1) Run locally
 ```bash
 # from the project root
-php -S localhost:8000 -t public
+php -S localhost:8000
 ```
 Open **http://localhost:8000**
 
 ### 2) Configure
-Edit **`app/config.php`**:
+Edit `config.php`:
+
 ```php
 return [
     'site_name' => 'Incredible Portfolio',
@@ -141,9 +141,10 @@ server {
 ---
 
 ## Customize the Design
-- Styles: **`public/assets/css/style.css`** (CSS variables at the top)
-- Small JS: **`public/assets/js/main.js`** (mobile nav toggle)
-- Images: **`public/assets/img/`** (replace the placeholder SVG with your project shots)
+
+* Styles: `assets/css/style.css` (CSS variables at the top)
+* Small JS: `assets/js/main.js` (mobile nav toggle)
+* Images: `assets/img/` (replace the placeholder SVG with your project shots)
 
 ---
 
