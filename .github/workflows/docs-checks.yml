@@ -33,12 +33,20 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
             args: >
-              --no-progress
-              --md
-              --exclude-mail
-              --exclude "localhost"
-              --exclude "example.com"
-              --exclude "portfolio.example.com"
-              "./**/*.md"
+              args: >
+                --no-progress
+                --md
+                --exclude-mail
+                --exclude "localhost"
+                --exclude "127.0.0.1"
+                --exclude "example.com"
+                --exclude "example.org"
+                --exclude "example.net"
+                --exclude "img.shields.io"
+                --exclude "githubusercontent.com"
+                --exclude "php.net"
+                --exclude "https://*"     # ignore all external URLs
+                "./**/*.md"
+  
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
