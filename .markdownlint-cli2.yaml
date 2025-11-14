@@ -1,0 +1,10 @@
+default: true
+
+# Allow long lines (README often has links, code, etc.)
+MD013: false
+
+# Allow inline HTML (badges, formatting)
+MD033: false
+
+# Don’t require the very first line to be a heading
+MD041: false
