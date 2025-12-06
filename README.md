@@ -188,6 +188,12 @@ Ideas for future enhancements:
 - Automatic sitemap.xml generation  
 - Optional dark mode theme  
 
+## Support My Work
+
+If you find this project helpful and want to support its development, you can buy me a coffee:
+
+[<img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="180" />](https://www.buymeacoffee.com/bromites)
+
 ---
 
 ## License
