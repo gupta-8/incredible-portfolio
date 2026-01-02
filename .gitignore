@@ -5,3 +5,9 @@ Thumbs.db
 *.log
 *.env
 /storage/messages.csv
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+storage/messages.csv
+storage/*.csv
