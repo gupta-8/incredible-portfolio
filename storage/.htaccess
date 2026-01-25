@@ -1,4 +1,5 @@
-location ^~ /storage/ {
-  deny all;
-  return 404;
-}
+# Block all direct access to storage directory (Apache)
+Require all denied
+
+# Extra hardening
+Options -Indexes
